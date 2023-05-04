@@ -1,0 +1,86 @@
+<p>home 0works!</p>
+
+<swirl-separator></swirl-separator>
+
+<swirl-modal id="modal" label="Dialog" #modal>
+  <div class="form-input-container">
+    <div class="absence-type-container">
+      <swirl-form-control>
+        <swirl-select label="Absence Type">
+          <swirl-option-list-section label="Section 1">
+            <swirl-option-list-item
+              label="This is an option 1"
+              value="1"
+            ></swirl-option-list-item>
+            <swirl-option-list-item
+              label="This is an option 2"
+              value="2"
+            ></swirl-option-list-item>
+            <swirl-option-list-item
+              label="This is an option 3"
+              value="3"
+            ></swirl-option-list-item>
+          </swirl-option-list-section>
+          <swirl-option-list-section label="Section 2">
+            <swirl-option-list-item
+              label="This is an option 4"
+              value="4"
+            ></swirl-option-list-item>
+          </swirl-option-list-section>
+        </swirl-select>
+      </swirl-form-control>
+    </div>
+
+    <div class="allday-container">
+      <span>All Day</span>
+      <div class="allday-switch-right">
+        <swirl-switch
+          checked="true"
+          input-id="allDay"
+          input-name="allDay"
+        ></swirl-switch>
+      </div>
+    </div>
+
+    <div class="date-picker-container">
+      <swirl-form-control id="startdate" label="Start Date">
+        <swirl-date-input></swirl-date-input>
+      </swirl-form-control>
+    </div>
+
+    <div class="date-picker-container">
+      <swirl-form-control id="enddate" label="End Date">
+        <swirl-date-input></swirl-date-input>
+      </swirl-form-control>
+    </div>
+
+    <div class="comment-container">
+      <div class="comment-input">
+        <swirl-form-control label="Comment">
+          <swirl-text-input value="" rows="2"></swirl-text-input>
+        </swirl-form-control>
+      </div>
+      <div class="comment-text">
+        <swirl-text>Set comment on your absence</swirl-text>
+      </div>
+    </div>
+  </div>
+
+  <swirl-button
+    label="Cancel"
+    (click)="closeModal()"
+    class="modal-button-left-bottom"
+  ></swirl-button>
+  <swirl-button
+    variant="flat"
+    intent="primary"
+    label="Request absence"
+    class="modal-button-right-bottom"
+  ></swirl-button>
+</swirl-modal>
+
+<swirl-button
+  icon="<swirl-icon-add></swirl-icon-add>"
+  (click)="openModal()"
+  label="Label"
+></swirl-button>

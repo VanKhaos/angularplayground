@@ -1,0 +1,119 @@
+.absence-new-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.form-input-container {
+  background: #fff;
+}
+
+.form-input-container swirl-action-list-item {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
+}
+
+.absence-type-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.allday-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.allday-container span {
+  margin-left: 1rem;
+}
+
+.allday-switch-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: start;
+  margin-right: 1rem;
+}
+
+.date-picker-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  min-width: 100%;
+}
+
+.comment-container {
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.comment-input {
+  width: 100%;
+}
+
+.comment-text {
+  margin: 0 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.modal-button-right-bottom {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  margin-left: 0.5rem;
+}
+
+.modal-button-left-bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+}
+
+.modal-button-container-bottom {
+  position: absolute;
+  height: 86px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: inline-block;
+  width: auto;
+  padding: 12px 16px 34px;
+  background-color: white;
+}
+
+.modal-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.allday_switch_right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.right-bottom-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.overview-container {
+  align-items: center;
+  height: 100%;
+}
